@@ -1,4 +1,5 @@
 # Automatic SMS Verification with the SMS Retriever API
+Useful For Phone Number verification
 This sample code is in JAVA, As per Google's new policy with the SMS Retriever API, you can perform SMS-based user verification in your Android app automatically, without requiring the user to manually type verification codes, and without requiring any extra app permissions.  
 
 ## Warning as per the new policy
@@ -43,10 +44,11 @@ In next few steps you will see how to create hash keys.
 ### Dependencies used
     // Add at app level gradle file
         implementation 'androidx.appcompat:appcompat:1.1.0'
-       implementation 'com.google.android.gms:play-services-base:17.1.0'
        implementation 'com.google.android.gms:play-services-identity:17.0.0'
-       implementation 'com.google.android.gms:play-services-auth:17.0.0'
-       implementation 'com.google.android.gms:play-services-auth-api-phone:17.1.0'
+       implementation 'com.google.android.gms:play-services-base:17.4.0'
+       implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+       //Optional for phone number hint
+       implementation 'com.google.android.gms:play-services-auth:18.1.0'
 
      // Note: If you have migrated your code to AndroidX than add this for LocalBroadCastManager
          implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
